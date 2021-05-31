@@ -27,11 +27,11 @@ public class MaxNumberTest
     }
 	@Test
     public void returnMaximumValueString() {
-        String[] string = {" Nikita ", " Ankita ", " Shweta "};
+        String[] string = {" Nikita ", " Pooja ", " Astha "};
         maxNumber = new FindMaxNumber();
         String maxString = maxNumber.findMaxNumber(string);
         maxNumber.printMaxNumber(maxString);
-        Assert.assertEquals(" Shweta ", maxString);
+        Assert.assertEquals(" Pooja ", maxString);
     }
 
 
