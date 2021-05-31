@@ -57,5 +57,32 @@ public class FindMaxNumber
 		System.out.println("Maximum Value is:" + max);
 	}
 
+	/**
+	 * findMaxNumber is a function to check the maximum value in String.
+	 * @param intArray
+	 * @return integer value
+	 */
+		
+	public String findMaxNumber(String[] StringArray) 
+	{
+		for (int i = 0; i < (StringArray.length - 1); i++) 
+		{
+            for (int j = 0; j < (StringArray.length - 1); j++) 
+            {
+                if (StringArray[j].compareTo(StringArray[j + 1]) < 0) 
+                {
+                    String temp = StringArray[j];
+                    StringArray[j] = StringArray[j + 1];
+                    StringArray[j + 1] = temp;
+                }
+            }
+        }
+
+        return StringArray[0];
+	}
+	public void printMaxNumber(String max) 
+	{
+		System.out.println("Maximum Value is:" + max);
+	}
 
 }

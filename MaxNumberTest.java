@@ -23,7 +23,16 @@ public class MaxNumberTest
         maxNumber = new FindMaxNumber();
         Float maxFloat = maxNumber.findMaxNumber(floatNum);
         maxNumber.printMaxNumber(maxFloat);
-        Assert.assertEquals(Float.valueOf(1.2f), maxFloat);
+        Assert.assertEquals(Float.valueOf(1.5f), maxFloat);
     }
+	@Test
+    public void returnMaximumValueString() {
+        String[] string = {" Nikita ", " Ankita ", " Shweta "};
+        maxNumber = new FindMaxNumber();
+        String maxString = maxNumber.findMaxNumber(string);
+        maxNumber.printMaxNumber(maxString);
+        Assert.assertEquals(" Shweta ", maxString);
+    }
+
 
 }
