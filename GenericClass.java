@@ -5,6 +5,10 @@ public class GenericClass <X , Y, Z>
 	X[] myXArray;
 	Y[] myYArray;
 	Z[] myZArray;
+	public GenericClass()
+	{
+		
+	}
 	/**
 	 * constructor of the class
 	 * @param myXArray
@@ -78,5 +82,9 @@ public class GenericClass <X , Y, Z>
 		{
 			System.out.println(i);
 		}
+	}
+	public <E> void printMaxNumber(E max) 
+	{
+		System.out.println("Maximum Value is:" + max);
 	}
 }

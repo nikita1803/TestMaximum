@@ -28,9 +28,6 @@ public class FindMaxNumber
 
         return intArray[0];
 	}
-	public <E> void printMaxNumber(E max) 
-	{
-		System.out.println("Maximum Value is:" + max);
-	}
+	
 
 }
